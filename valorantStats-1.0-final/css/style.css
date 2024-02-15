@@ -1,0 +1,70 @@
+#title {
+    font-size: 50px;
+}
+
+.axis-title {
+    font-size: 20px;
+    font-weight: 16px;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-center;
+    align-items: center;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-center;
+    align-items: center;
+}
+
+.cat-gun1_name rect {
+    fill: #0062ff;
+}
+
+.text-gun1_name {
+    fill: #0062ff;
+}
+
+.cat-gun2_name rect {
+    fill: #498efc;
+}
+
+.text-gun2_name {
+    fill: #498efc;
+}
+
+.cat-gun3_name rect {
+    fill: #89b7ff;
+}
+
+.text-gun3_name {
+    fill: #89b7ff;
+}
+
+.cat-agent_1 rect {
+    fill: #ffb300;
+}
+
+.text-agent_1 {
+    fill: #ffb300;
+}
+
+.cat-agent_2 rect {
+    fill: #facb5c;
+}
+
+.text-agent_2 {
+    fill: #facb5c;
+}
+
+.cat-agent_3 rect {
+    fill: #ffe29d;
+}
+
+.text-agent_3 {
+    fill: #ffe29d;
+}

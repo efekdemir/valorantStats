@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Valorant Stats</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/players.css" />
+  </head>
+  <body>
+    <!-- Add HTML content, SVG drawing area, ... -->
+    <header id="title">Valorant Stats</header>
+    <div id="container">
+      <div class="row-container">
+        <div>
+          <label for="filter">Top 1000 Filter:</label
+          ><select id="filter">
+            <option value="kills_round">Kills per Round</option>
+            <option value="damage_round">Damage per Round</option>
+            <option value="win_percent">Win Rate</option>
+            <option value="kd_ratio">Kill/Death Ratio</option>
+            <option value="first_bloods">First Bloods</option>
+            <option value="clutches">Clutches</option>
+            <option value="aces">Aces</option>
+            <option value="flawless">Flawless</option>
+          </select>
+          <div id="geoMap"></div>
+        </div>
+        <div id="playerChart"></div>
+        <div id="radarChart"></div>
+      </div>
+      <div class="row-container">
+        <div id="barChart1"></div>
+        <div id="barChart2"></div>
+
+        <div id="bodyChart"></div>
+      </div>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <svg height="5" width="5" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <pattern
+          id="lightstripe"
+          patternUnits="userSpaceOnUse"
+          width="5"
+          height="5"
+        >
+          <image
+            xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg=="
+            x="0"
+            y="0"
+            width="5"
+            height="5"
+          ></image>
+        </pattern>
+      </defs>
+    </svg>
+
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+    <!-- TopoJson -->
+    <script src="js/topojson.v3.js"></script>
+
+    <!-- Our JS code -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/playerChart.js"></script>
+    <script src="js/geoMap.js"></script>
+    <script src="js/barChart.js"></script>
+    <script src="js/bodyChart.js"></script>
+    <script src="js/radarChart.js"></script>
+  </body>
+</html>
